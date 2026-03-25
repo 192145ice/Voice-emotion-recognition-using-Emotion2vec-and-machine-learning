@@ -106,7 +106,8 @@ I --> J
 - 即時語音情緒辨識系統
 ---
 ##  獎狀
-![](image/Certificate_of_Merit.pdf)
+<img src="image/Certificate_of_Merit.png" width="500" alt="Certificate of Merit">
+
 ##  論文
 https://drive.google.com/file/d/1pgRWsxcVOi-7EDF73rE5FOvJ4ffI2ihX/view?usp=sharing
 ##  作者
