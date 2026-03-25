@@ -1,0 +1,53 @@
+<mxfile host="app.diagrams.net" modified="2025-01-01T00:00:00.000Z" agent="5.0 (Windows)">
+  <diagram id="library-er" name="ER Diagram">
+    <mxGraphModel dx="827" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Publisher -->
+        <mxCell id="publisher" value="Publisher&#10;---------------------&#10;publisher_id (PK)&#10;name&#10;address&#10;phone" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="200" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Book -->
+        <mxCell id="book" value="Book&#10;---------------------&#10;book_id (PK)&#10;title&#10;isbn&#10;publish_year&#10;publisher_id (FK)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="330" y="40" width="220" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- Member -->
+        <mxCell id="member" value="Member&#10;---------------------&#10;member_id (PK)&#10;name&#10;email&#10;phone" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="200" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Staff -->
+        <mxCell id="staff" value="Staff&#10;---------------------&#10;staff_id (PK)&#10;name&#10;position&#10;email" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="330" y="260" width="210" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- Borrow -->
+        <mxCell id="borrow" value="Borrow&#10;---------------------&#10;borrow_id (PK)&#10;book_id (FK)&#10;member_id (FK)&#10;staff_id (FK)&#10;borrow_date&#10;return_date" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="620" y="160" width="250" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- Relationships -->
+        <mxCell id="publisher-book" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="publisher" target="book">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="book-borrow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="book" target="borrow">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="member-borrow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="member" target="borrow">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="staff-borrow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="staff" target="borrow">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
