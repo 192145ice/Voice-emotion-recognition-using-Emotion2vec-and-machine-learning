@@ -4,10 +4,8 @@
 目標為建立一套完整的語音情緒辨識系統（Speech Emotion Recognition, SER），  
 透過 Emotion2vec 預訓練模型提取語音特徵，並搭配多種機器學習分類器進行情緒分類。
 
-最終模型在六種情緒分類中達到
-
-✅ 90.04% 準確率
-
+#### 最終模型在六種情緒分類中達到 90.04% 準確率
+#### 並獲得畢業專題競賽優等獎
 ---
 
 ##  研究動機
@@ -107,7 +105,8 @@ I --> J
 - 使用更大型語音資料集
 - 即時語音情緒辨識系統
 ---
-
+##  獎狀
+![](image/Certificate_of_Merit.pdf)
 ##  論文
 https://drive.google.com/file/d/1pgRWsxcVOi-7EDF73rE5FOvJ4ffI2ihX/view?usp=sharing
 ##  作者
